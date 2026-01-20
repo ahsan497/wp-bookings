@@ -1,0 +1,600 @@
+/**
+ * Booking Forms Styles - Professional 2 Row Layout
+ * Prefix: bkf- (booking forms)
+ */
+
+/* Container */
+.bkf-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: visible;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Tabs */
+.bkf-tabs {
+    display: flex;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.bkf-tab-btn {
+    flex: 0 0 auto;
+    padding: 14px 30px !important;
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+}
+
+.bkf-tab-btn:hover {
+    background: #fff;
+    color: #333;
+}
+
+.bkf-tab-btn.bkf-active {
+    background: #fff;
+    color: #333;
+    border-bottom-color: #ff6b35;
+}
+
+.bkf-tab-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Tab Content */
+.bkf-tab-content {
+    display: none;
+    padding: 25px 30px;
+    animation: bkfFadeIn 0.2s ease;
+}
+
+.bkf-tab-content.bkf-active {
+    display: block;
+}
+
+@keyframes bkfFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Notifications */
+.bkf-notification {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    animation: bkfSlideDown 0.3s ease;
+}
+
+@keyframes bkfSlideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bkf-notification.bkf-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.bkf-notification.bkf-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.bkf-notification svg {
+    flex-shrink: 0;
+}
+
+/* Form Layout */
+.bkf-form {
+    max-width: 100%;
+}
+
+/* Trip Type Radio Section - Above Form Rows */
+.bkf-trip-type-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* Inline Row Layout */
+.bkf-row {
+    display: flex;
+    /* align-items: flex-end; */
+    gap: 15px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+/* Radio Group Container */
+.bkf-radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bkf-radio-container > label {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: 0.2px;
+}
+
+/* Radio Group */
+.bkf-radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bkf-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.bkf-radio-label input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    margin: 0;
+    accent-color: #ff6b35;
+}
+
+.bkf-radio-label span {
+    user-select: none;
+}
+
+/* Form Groups - Professional Sizing */
+.bkf-field {
+    flex: 1;
+    min-width: 180px;
+    position: relative;
+}
+
+.bkf-field-small {
+    flex: 0 0 100px;
+    min-width: 100px;
+}
+
+.bkf-field-medium {
+    flex: 1.2;
+    min-width: 200px;
+}
+
+.bkf-field-wide {
+    flex: 2;
+    min-width: 280px;
+}
+
+.bkf-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: 0.2px;
+}
+
+/* Input with Icon */
+.bkf-input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bkf-input-icon svg {
+    position: absolute;
+    left: 12px;
+    color: #999;
+    pointer-events: none;
+}
+
+.bkf-input-icon input,
+.bkf-input-icon select {
+    padding-left: 42px;
+}
+
+/* Inputs, Selects, and Textareas */
+.bkf-field input,
+.bkf-field select,
+.bkf-field textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: #fff;
+    font-family: inherit;
+    color: #333;
+}
+
+.bkf-field input
+{
+
+    padding: 11px 30px !important;
+}
+
+.bkf-field input,
+.bkf-field select {
+    height: 42px;
+}
+
+.bkf-field textarea {
+    min-height: 42px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.bkf-field input:focus,
+.bkf-field select:focus,
+.bkf-field textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.bkf-field input::placeholder,
+.bkf-field textarea::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+/* Select Dropdown */
+.bkf-field select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 35px;
+}
+
+/* Date Inputs */
+.bkf-field input[type="date"] {
+    cursor: pointer;
+}
+
+.bkf-field input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: opacity(0.6);
+}
+
+.bkf-field input[type="date"]:hover::-webkit-calendar-picker-indicator {
+    filter: opacity(1);
+}
+
+/* Autocomplete */
+.bkf-autocomplete {
+    position: relative;
+}
+
+.bkf-autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border: 1.5px solid #d5d5d5;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 260px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    display: none;
+    margin-top: -1px;
+}
+
+.bkf-autocomplete-item {
+    padding: 11px 14px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.bkf-autocomplete-item:last-child {
+    border-bottom: none;
+}
+
+.bkf-autocomplete-item:hover {
+    background: #fff5f2;
+}
+
+.bkf-autocomplete-item strong {
+    color: #333;
+    font-size: 13px;
+    display: block;
+    font-weight: 600;
+}
+
+.bkf-airport-details {
+    font-size: 11px;
+    color: #777;
+    margin-top: 2px;
+}
+
+/* Submit Button */
+.bkf-submit {
+    flex: 0 0 auto;
+    padding: 11px 35px !important;
+    background: #ff6b35;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-transform: capitalize;
+    height: 42px;
+    margin-top: 20px;
+    min-width: 160px;
+}
+
+.bkf-submit:hover:not(:disabled) {
+    background: #e55a28;
+    box-shadow: 0 3px 10px rgba(255, 107, 53, 0.35);
+    transform: translateY(-1px);
+}
+
+.bkf-submit:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+.bkf-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.bkf-btn-text,
+.bkf-btn-loader {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.bkf-btn-loader svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Spinner Animation */
+.bkf-spinner {
+    animation: bkfSpin 1s linear infinite;
+}
+
+@keyframes bkfSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Scrollbar Styling */
+.bkf-autocomplete-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.bkf-autocomplete-dropdown::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+.bkf-autocomplete-dropdown::-webkit-scrollbar-thumb {
+    background: #ff6b35;
+    border-radius: 3px;
+}
+
+.bkf-autocomplete-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #e55a28;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .bkf-row {
+        flex-wrap: wrap;
+    }
+    
+    .bkf-field {
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bkf-field {
+        flex: 1 1 calc(33.333% - 15px);
+        min-width: 170px;
+    }
+    
+    .bkf-field-medium {
+        flex: 1 1 calc(50% - 15px);
+    }
+    
+    .bkf-field-wide {
+        flex: 1 1 calc(66.666% - 15px);
+    }
+}
+
+@media (max-width: 992px) {
+    .bkf-field {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 150px;
+    }
+    
+    .bkf-field-medium,
+    .bkf-field-wide,
+    .bkf-submit {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bkf-container {
+        margin: 15px;
+    }
+
+    .bkf-tab-content {
+        padding: 20px;
+    }
+
+    .bkf-row {
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .bkf-field {
+        flex: 1 1 calc(50% - 12px);
+        min-width: 140px;
+    }
+
+    .bkf-field-small {
+        flex: 1 1 calc(50% - 12px);
+        min-width: 100px;
+    }
+
+    .bkf-tab-btn {
+        padding: 12px 20px !important;
+        font-size: 14px;
+    }
+
+    .bkf-field input,
+    .bkf-field select,
+    .bkf-field textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .bkf-field input,
+    .bkf-field select {
+        height: 40px;
+    }
+
+    .bkf-input-icon input,
+    .bkf-input-icon select {
+        padding-left: 38px;
+    }
+
+    .bkf-submit {
+        padding: 10px 25px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .bkf-radio-group {
+        gap: 15px;
+    }
+
+    .bkf-radio-label {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bkf-container {
+        margin: 10px;
+    }
+
+    .bkf-tab-content {
+        padding: 15px;
+    }
+
+    .bkf-row {
+        gap: 10px;
+    }
+
+    .bkf-field,
+    .bkf-field-small,
+    .bkf-field-medium,
+    .bkf-field-wide {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    .bkf-tab-btn {
+        flex-direction: column;
+        gap: 4px;
+        padding: 10px 15px !important;
+        font-size: 13px;
+    }
+
+    .bkf-tab-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .bkf-radio-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* Accessibility */
+.bkf-submit:focus,
+.bkf-field input:focus,
+.bkf-field select:focus,
+.bkf-field textarea:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+}
+
+.bkf-tab-btn:focus-visible {
+    outline: 2px solid #ff6b35;
+    outline-offset: -2px;
+}
+
+.bkf-radio-label input[type="radio"]:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .bkf-field input,
+    .bkf-field select,
+    .bkf-field textarea {
+        border-width: 2px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .bkf-container *,
+    .bkf-container *::before,
+    .bkf-container *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

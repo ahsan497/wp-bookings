@@ -1,0 +1,14 @@
+[
+  {"AAR - Aarhus - Denmark": "ABD - Abadan - Iran"},
+  {"AAR - Aarhus - Denmark": "AEH - Abeche - Chad"},
+  {"AAR - Aarhus - Denmark": "ABZ - Aberdeen - United Kingdom"},
+  {"AAR - Aarhus - Denmark": "ABR - Aberdeen (SD) - USA"},
+  {"LHR - London - United Kingdom": "JFK - New York - USA"},
+  {"LHR - London - United Kingdom": "LAX - Los Angeles - USA"},
+  {"LHR - London - United Kingdom": "DXB - Dubai - UAE"},
+  {"MAN - Manchester - United Kingdom": "CDG - Paris - France"},
+  {"MAN - Manchester - United Kingdom": "FCO - Rome - Italy"},
+  {"DXB - Dubai - UAE": "BKK - Bangkok - Thailand"},
+  {"DXB - Dubai - UAE": "SIN - Singapore - Singapore"},
+  {"JFK - New York - USA": "LGW - London Gatwick - United Kingdom"}
+]

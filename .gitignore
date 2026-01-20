@@ -1,0 +1,44 @@
+# Create .gitignore file
+cat > .gitignore << 'EOF'
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup-db/
+
+# Plugin specific
+*.log
+debug.log
+error_log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Composer (if any)
+vendor/
+composer.lock
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.old
+README-local.md
+EOF
